@@ -46,8 +46,10 @@ pip-log.txt
 
 # --- Credentials / local config ---
 # Keep a tracked example as `.env.example`
+.env
 *.env
 .env.*
+!.env.example
 *.secret
 *.secrets.*
 *.key
