@@ -1,0 +1,20 @@
+{
+  "slides": {
+    "1": {
+      "{{title}}": {"field": "title"},
+      "{{subtitle}}": {"field": "text", "transform": "summary"}
+    },
+    "2": {
+      "{{section_title}}": {"field": "title"},
+      "{{body}}": {"field": "text", "transform": "bullets"},
+      "{{image:key_trends}}": {"field": "image_prompt"}
+    },
+    "3": {
+      "{{left_title}}": {"field": "title", "transform": "split_title_left"},
+      "{{left_body}}": {"field": "text", "transform": "split_body_left"},
+      "{{right_title}}": {"field": "title", "transform": "split_title_right"},
+      "{{right_body}}": {"field": "text", "transform": "split_body_right"},
+      "{{image:comparison}}": {"field": "image_prompt", "transform": "comparison"}
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "name": "default_template",
+  "description": "Базовий шаблон презентації з трьома слайдами",
+  "slides": [
+    {
+      "layout_name": "Title Slide",
+      "placeholders": {
+        "{{title}}": {
+          "type": "text",
+          "description": "Головний заголовок презентації",
+          "max_chars": 120
+        },
+        "{{subtitle}}": {
+          "type": "text",
+          "description": "Підзаголовок або короткий опис",
+          "max_chars": 240
+        }
+      }
+    },
+    {
+      "layout_name": "Title and Content",
+      "placeholders": {
+        "{{section_title}}": {
+          "type": "text",
+          "description": "Назва розділу",
+          "max_chars": 110
+        },
+        "{{body}}": {
+          "type": "text",
+          "description": "Основний зміст слайда у форматі булетів",
+          "max_chars": 600
+        },
+        "{{image:key_trends}}": {
+          "type": "image",
+          "description": "Зображення або діаграма для підкріплення тез",
+          "size_px": [1920, 1080]
+        }
+      }
+    },
+    {
+      "layout_name": "Two Content",
+      "placeholders": {
+        "{{left_title}}": {
+          "type": "text",
+          "description": "Ліва колонка: заголовок",
+          "max_chars": 90
+        },
+        "{{left_body}}": {
+          "type": "text",
+          "description": "Ліва колонка: короткі пункти",
+          "max_chars": 400
+        },
+        "{{right_title}}": {
+          "type": "text",
+          "description": "Права колонка: заголовок",
+          "max_chars": 90
+        },
+        "{{right_body}}": {
+          "type": "text",
+          "description": "Права колонка: короткі пункти",
+          "max_chars": 400
+        },
+        "{{image:comparison}}": {
+          "type": "image",
+          "description": "Ілюстрація або схема для порівняння",
+          "size_px": [1280, 720]
+        }
+      }
+    }
+  ]
+}

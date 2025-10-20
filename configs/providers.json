@@ -1,0 +1,30 @@
+{
+  "llm": {
+    "default": "gemini",
+    "options": {
+      "gemini": {
+        "env_key": "GEMINI_API_KEY",
+        "model_env": "GEMINI_MODEL"
+      },
+      "groq": {
+        "env_key": "GROQ_API_KEY",
+        "model_env": "GROQ_MODEL"
+      },
+      "ollama": {
+        "env_key": null,
+        "model_env": "OLLAMA_MODEL"
+      }
+    }
+  },
+  "image": {
+    "default": "gemini",
+    "options": {
+      "gemini": {
+        "env_key": "GEMINI_API_KEY"
+      },
+      "ollama": {
+        "env_key": null
+      }
+    }
+  }
+}
