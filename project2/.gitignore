@@ -1,0 +1,132 @@
+# =========================
+# AI_PPTX_Workflow_Demo
+# Recommended .gitignore
+# =========================
+
+# --- OS / Editors ---
+.DS_Store
+Thumbs.db
+Icon?
+ehthumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+*.code-workspace
+
+# --- Python build / cache ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+.site/
+.python-version
+.mypy_cache/
+.pytype/
+.pyre/
+.cache/
+.coverage*
+htmlcov/
+.tox/
+pytest_cache/
+
+# --- Virtual envs ---
+.env
+.venv
+env/
+venv/
+ENV/
+pip-wheel-metadata/
+pip-log.txt
+
+# --- Credentials / local config ---
+# Keep a tracked example as `.env.example`
+.env
+*.env
+.env.*
+!.env.example
+*.secret
+*.secrets.*
+*.key
+*.pem
+token.json
+credentials.json
+google-credentials.json
+service_account.json
+
+# --- Jupyter / experiments ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+.jupyter/
+notebooks/.ipynb_checkpoints/
+notebooks/*-checkpoint.ipynb
+
+# --- Logs / runtime artifacts ---
+*.log
+logs/
+*.tmp
+tmp/
+temp/
+**/__scratch__/
+
+# --- Data (retain small samples via samples/*) ---
+data/
+!data/README.md
+!data/samples/
+!data/samples/**
+
+# --- Outputs (generated content) ---
+output/
+!output/README.md
+# (Optional) allow tiny fixtures:
+!output/samples/
+!output/samples/**
+
+# --- Images & media generated on the fly ---
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.webp
+*.mp4
+*.wav
+*.mp3
+
+# --- Documents produced by the pipeline ---
+*.pptx
+*.pdf
+*.docx
+
+# --- Node (if any UI tools are added later) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+.pnp.js
+
+# --- Mac Python quarantine cache (occasionally appears) ---
+*.ipynb-*
+
+# --- ADK / graph caches (keep your graph definitions tracked) ---
+adk_cache/
+*.adkcache
+
+# --- VS Code dev containers / docker ---
+.devcontainer/
+docker-data/
+*.tar
+
+# --- Misc ---
+# Ignore local research caches (web search, embeddings, etc.)
+.cache_*/
+.embeddings/
+vectorstore/
+chroma/
+faiss_index/
